@@ -46,9 +46,9 @@ const Skills = () => {
                 <skill.icon className="w-full h-full text-primary transition-colors duration-200" />
               </div>
               <h3 className="text-sm font-medium text-center">{skill.name}</h3>
-              <span className="absolute top-2 right-2 text-xs text-muted-foreground">
+              {/* <span className="absolute top-2 right-2 text-xs text-muted-foreground">
                 {skill.category}
-              </span>
+              </span> */}
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary/20 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}

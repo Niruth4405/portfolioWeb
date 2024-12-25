@@ -1,56 +1,17 @@
 "use client"
 
-import { useCallback } from "react"
 import { motion } from "framer-motion"
-import Particles from "@tsparticles/react"
-import { loadSlim } from "@tsparticles/slim"
 import { FaLinkedin, FaTwitter, FaInstagram, FaDiscord } from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
+import niruth from './assets/niruth.jpg'
 
 const About = () => {
-  const particlesInit = useCallback(async engine => {
-    await loadSlim(engine)
-  }, [])
-
   return (
-    <section id="about" className="relative min-h-screen pt-16">
-      <Particles
-        className="absolute inset-0 -z-10"
-        init={particlesInit}
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          particles: {
-            color: {
-              value: "#808080",
-            },
-            links: {
-              color: "#808080",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              speed: 2,
-            },
-            number: {
-              value: 50,
-            },
-            opacity: {
-              value: 0.5,
-            },
-          },
-        }}
-      />
-      
+    <section id="about" className="relative flex flex-col justify-center items-center min-h-screen pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+          
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -82,7 +43,7 @@ const About = () => {
               ))}
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -91,7 +52,7 @@ const About = () => {
           >
             <div className="relative w-72 h-72 md:w-96 md:h-96">
               <Image
-                src="/profile-photo.jpg"
+                src={niruth}
                 alt="Niruth Ananth"
                 fill
                 className="rounded-full object-cover"
@@ -99,6 +60,7 @@ const About = () => {
               />
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
