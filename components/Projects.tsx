@@ -16,8 +16,8 @@ const Projects = () => {
       description: "Personal portfolio website built with Next.js and Tailwind CSS",
       image: portfolio,
       github: "https://github.com/Niruth4405/portfolioWeb",
-      live: "https://portfolio.example.com",
-      tags: ["Next.js", "Tailwind CSS", "TypeScript"]
+      live: "https://portfolio-web-2025.vercel.app/",
+      tags: ["Next.js", "Tailwind CSS", "TypeScript","Framer Motion"]
     },
     {
       title: "Landing Page",
