@@ -8,7 +8,7 @@ const Education = () => {
       period: "2022-2026",
       institution: "Dayananda Sagar College of Engineering",
       degree: "Bachelor of Engineering",
-      details: "Computer Science Engineering"
+      details: "Electronics and Telecommunications engineering"
     },
     {
       period: "2010-2022",

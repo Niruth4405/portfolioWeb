@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { FaHtml5, FaCss3Alt, FaReact, FaJava, FaPython } from "react-icons/fa"
 import { SiTailwindcss, SiJavascript, SiNextdotjs, SiMongodb, SiMysql, SiPrisma, SiOpenai } from "react-icons/si"
+import { SiSupabase } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -16,8 +17,9 @@ const Skills = () => {
     { name: "Python", icon: FaPython, category: "Backend" },
     { name: "MongoDB", icon: SiMongodb, category: "Backend" },
     { name: "MySQL", icon: SiMysql, category: "Backend" },
-    { name: "Prisma", icon: SiPrisma, category: "Backend" },
-    { name: "ChatGPT", icon: SiOpenai, category: "Tools" },
+    { name: "Prisma", icon: SiPrisma, category: "Backend" },    
+    { name: "Supabase", icon: SiSupabase, category: "Backend" },
+    
   ]
 
   return (

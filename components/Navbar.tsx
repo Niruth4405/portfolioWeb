@@ -21,14 +21,17 @@ const Navbar = () => {
   }
 
   const handleDownloadCV = () => {
-    // Add CV download logic here
+    const link = document.createElement('a');
+  link.href = './'; // Update this with the correct file path
+  link.download = './assets/Resume - India.pdf'; // The name of the downloaded file
+  link.click();
   }
 
   const closeSidebar = () => {
     setSidebarOpen(false)
   }
 
-  const handleSidebarClick = (e) => {
+  const handleSidebarClick = (e: { stopPropagation: () => void }) => {
     e.stopPropagation()
   }
 

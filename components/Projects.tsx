@@ -4,40 +4,44 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import virtual from "./assets/virtualAi.png"
+import summit from "./assets/summit.png"
+import portfolio from "./assets/Portfolio .png"
+
 
 const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
       description: "Personal portfolio website built with Next.js and Tailwind CSS",
-      image: "/projects/portfolio.jpg",
-      github: "https://github.com/username/portfolio",
+      image: portfolio,
+      github: "https://github.com/Niruth4405/lp",
       live: "https://portfolio.example.com",
-      tags: ["Next.js", "Tailwind CSS", "React"]
+      tags: ["Next.js", "Tailwind CSS", "TypeScript"]
     },
     {
       title: "Landing Page",
-      description: "Modern landing page with animations and responsive design",
-      image: "/projects/landing.jpg",
+      description: "Modern landing page with responsive design",
+      image: virtual,
       github: "https://github.com/username/landing",
-      live: "https://landing.example.com",
-      tags: ["React", "Framer Motion", "Tailwind CSS"]
+      live: "https://lp-vfba.vercel.app/",
+      tags: ["Next.js", "JavaScript", "Tailwind CSS"]
     },
-    {
-      title: "College Website",
-      description: "Official college website with modern UI/UX",
-      image: "/projects/college.jpg",
-      github: "https://github.com/username/college",
-      live: "https://college.example.com",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS"]
-    },
+    // {
+    //   title: "College Website",
+    //   description: "Official college website with modern UI/UX",
+    //   image: "/projects/college.jpg",
+    //   github: "https://github.com/username/college",
+    //   live: "https://college.example.com",
+    //   tags: ["Next.js", "TypeScript", "Tailwind CSS"]
+    // },
     {
       title: "IEDC DSCE Website",
-      description: "Website for Innovation and Entrepreneurship Development Cell",
-      image: "/projects/iedc.jpg",
-      github: "https://github.com/username/iedc",
-      live: "https://iedc.example.com",
-      tags: ["React", "Node.js", "MongoDB"]
+      description: "Website for Innovation and Entrepreneurship Development Cell to promote E-summit 2024",
+      image: summit,
+      github: "https://github.com/Niruth4405/E-Summit",
+      live: "https://e-summit24.vercel.app/",
+      tags: ["React", "Tailwind CSS", "JavaScript"]
     }
   ]
 

@@ -21,19 +21,19 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <Link href="https://linkedin.com" className="hover:text-primary">
+              <Link href="http://www.linkedin.com/in/niruth-ananth-19a9961b3" className="hover:text-primary">
                 <FaLinkedin size={24} />
               </Link>
-              <Link href="https://twitter.com" className="hover:text-primary">
+              <Link href="https://x.com/NiruthAnanth" className="hover:text-primary">
                 <FaTwitter size={24} />
               </Link>
-              <Link href="https://instagram.com" className="hover:text-primary">
+              <Link href="https://www.instagram.com/niruthcodes/" className="hover:text-primary">
                 <FaInstagram size={24} />
               </Link>
-              <Link href="https://discord.com" className="hover:text-primary">
+              {/* <Link href="https://discord.com" className="hover:text-primary">
                 <FaDiscord size={24} />
-              </Link>
-              <Link href="mailto:contact@example.com" className="hover:text-primary">
+              </Link> */}
+              <Link href="niruthananth03@gmail.com" className="hover:text-primary">
                 <MdEmail size={24} />
               </Link>
             </div>

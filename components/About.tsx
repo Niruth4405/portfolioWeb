@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { FaLinkedin, FaTwitter, FaInstagram, FaDiscord } from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
-import niruth from './assets/niruth.jpg'
+import niruth from './assets/niruthPic.jpg'
 
 const About = () => {
   return (
@@ -22,15 +22,14 @@ const About = () => {
               Hi, I'm Niruth Ananth
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              A passionate developer focused on creating beautiful and functional web experiences.
-              Currently studying at Dayananda Sagar College of Engineering.
+              A Front-end developer focused on creating functional and user-friendly websites using React, Next.js and Supabase.
             </p>
             <div className="flex space-x-6">
               {[
-                { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-                { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
-                { icon: FaInstagram, href: "https://instagram.com", label: "Instagram" },
-                { icon: FaDiscord, href: "https://discord.com", label: "Discord" },
+                { icon: FaLinkedin, href: "http://www.linkedin.com/in/niruth-ananth-19a9961b3", label: "LinkedIn" },
+                { icon: FaTwitter, href: "https://x.com/NiruthAnanth", label: "Twitter" },
+                { icon: FaInstagram, href: "https://www.instagram.com/niruthcodes/", label: "Instagram" },
+                // { icon: FaDiscord, href: "https://discord.com", label: "Discord" },
               ].map((social) => (
                 <Link
                   key={social.label}
