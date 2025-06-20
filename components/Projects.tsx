@@ -10,6 +10,7 @@ import portfolio from "./assets/Portfolio .png";
 import Linkedin from "./assets/Linkedin.png";
 import book from "./assets/bookAPI.png";
 import login from "./assets/login.png";
+import weather from "./assets/Weather.png";
 
 const Projects = () => {
   const projects = [
@@ -71,6 +72,15 @@ const Projects = () => {
       live: "https://dsce-project.vercel.app/",
       tags: ["HTML", "CSS", "JavaScript"],
     },
+     {
+      title: "Weather App",
+      description: "Reguar weather app using OpenWeather API",
+      image: weather,
+      github: "https://github.com/Niruth4405/Weather-app",
+      live: "https://weather-app-three-rust-57.vercel.app/",
+      tags: ["React.js", "CSS", "JavaScript"," OpenWeather API"],
+    },
+
   
   ];
 
