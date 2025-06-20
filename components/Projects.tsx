@@ -1,23 +1,26 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import virtual from "./assets/virtualAi.png"
-import summit from "./assets/summit.png"
-import portfolio from "./assets/Portfolio .png"
-
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import virtual from "./assets/virtualAi.png";
+import summit from "./assets/summit.png";
+import portfolio from "./assets/Portfolio .png";
+import Linkedin from "./assets/Linkedin.png";
+import book from "./assets/bookAPI.png";
+import login from "./assets/login.png";
 
 const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
-      description: "Personal portfolio website built with Next.js and Tailwind CSS",
+      description:
+        "Personal portfolio website built with Next.js and Tailwind CSS",
       image: portfolio,
       github: "https://github.com/Niruth4405/portfolioWeb",
       live: "https://portfolio-web-2025.vercel.app/",
-      tags: ["Next.js", "Tailwind CSS", "TypeScript","Framer Motion"]
+      tags: ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
     },
     {
       title: "Landing Page",
@@ -25,7 +28,7 @@ const Projects = () => {
       image: virtual,
       github: "https://github.com/username/landing",
       live: "https://lp-vfba.vercel.app/",
-      tags: ["Next.js", "JavaScript", "Tailwind CSS"]
+      tags: ["Next.js", "JavaScript", "Tailwind CSS"],
     },
     // {
     //   title: "College Website",
@@ -37,13 +40,39 @@ const Projects = () => {
     // },
     {
       title: "IEDC DSCE Website",
-      description: "Website for Innovation and Entrepreneurship Development Cell to promote E-summit 2024",
+      description:
+        "Website for Innovation and Entrepreneurship Development Cell to promote E-summit 2024",
       image: summit,
       github: "https://github.com/Niruth4405/E-Summit",
       live: "https://e-summit24.vercel.app/",
-      tags: ["React", "Tailwind CSS", "JavaScript"]
-    }
-  ]
+      tags: ["React", "Tailwind CSS", "JavaScript"],
+    },
+    {
+      title: "Linkedin Clone",
+      description: "A clone of Linkedin home page (Not responsive)",
+      image: Linkedin,
+      github: "https://github.com/Niruth4405/Linkedin-Clone",
+      live: "https://linkedin-clone-six-orcin.vercel.app/",
+      tags: ["Next.js", "Tailwind CSS", "JavaScript"],
+    },
+     {
+      title: "Internship test",
+      description: "An internship test creating documentation for their project ",
+      image: book,
+      github: "https://github.com/Niruth4405/internship-test",
+      live: "internship-test-sooty.vercel.app",
+      tags: ["Next.js", "Tailwind CSS", "JavaScript"],
+    },
+    {
+      title: "Login and Signup page",
+      description: "Login & Signup page design for college website",
+      image: login,
+      github: "https://github.com/Niruth4405/DSCE-project",
+      live: "https://dsce-project.vercel.app/",
+      tags: ["HTML", "CSS", "JavaScript"],
+    },
+  
+  ];
 
   return (
     <section id="projects" className="py-24 bg-muted/50">
@@ -76,7 +105,9 @@ const Projects = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
+                <p className="text-muted-foreground mb-4">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
@@ -109,7 +140,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
